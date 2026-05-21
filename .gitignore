@@ -1,0 +1,12 @@
+**/.lake/
+**/build/
+**/.direnv/
+**/.envrc
+**/.DS_Store
+**/*.olean
+**/*.ilean
+**/*.trace
+**/*.tmp
+**/docbuild/.lake/
+**/docbuild/build/
+**/docbuild/site/node_modules/

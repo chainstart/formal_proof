@@ -1,0 +1,32 @@
+{
+  "schema_version": "manuscript_support_materials.formal_proof.v1",
+  "paper": "A Verified Proof of Written on the Wall II Conjecture 141",
+  "public_repository": "https://github.com/chainstart/wowii-conjecture141-formal-proof",
+  "target_theorem": "WrittenOnTheWallII.GraphConjecture141.conjecture141_strong",
+  "target_file": "FormalConjectures/WrittenOnTheWallII/GraphConjecture141.lean",
+  "lean_toolchain": "leanprover/lean4:v4.27.0",
+  "mathlib_revision": "v4.27.0",
+  "build_command": "lake build FormalConjectures.WrittenOnTheWallII.GraphConjecture141",
+  "cache_command": "lake exe cache get",
+  "placeholder_scan_command": "rg -n \"\\\\bsorry\\\\b|\\\\badmit\\\\b|axiom|constant|opaque\" FormalConjectures/WrittenOnTheWallII/GraphConjecture141.lean",
+  "included": [
+    "FormalConjectures/",
+    "FormalConjecturesForMathlib/",
+    "FormalConjecturesForMathlib.lean",
+    "FormalConjecturesTest/",
+    "scripts/",
+    "lakefile.toml",
+    "lake-manifest.json",
+    "lean-toolchain",
+    "LICENSE",
+    "natural_language_proof.md",
+    "verification_report.json",
+    "README.md",
+    "DEPENDENCIES_AND_REPRODUCTION.md"
+  ],
+  "excluded": [
+    ".lake/",
+    ".git/",
+    "build caches"
+  ]
+}
