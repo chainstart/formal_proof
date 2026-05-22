@@ -10,6 +10,21 @@
 **/docbuild/.lake/
 **/docbuild/build/
 **/docbuild/site/node_modules/
-
-# Local proof workspaces can include full dependency/build snapshots.
-wowii_conjecture17_induced_bipartite/
+**/docbuild/
+**/site/
+**/.agents/
+**/.codex/
+**/.devcontainer/
+**/.github/
+**/.vscode/
+**/*/.gitattributes
+**/*/.gitignore
+**/*/.gitpod.yml
+**/*/.mailmap
+**/AGENTS.md
+**/AUTHORS
+**/CONTRIBUTING.md
+**/episode*_note.txt
+**/episode*_focused_note.txt
+**/episode*_lean_attack_note.txt
+**/episode*_lean_probe_log.md

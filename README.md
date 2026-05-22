@@ -10,6 +10,7 @@ Public repository: <https://github.com/chainstart/formal_proof>
 
 | Package | Manuscript / theorem | Main Lean declaration | Reproduction guide |
 | --- | --- | --- | --- |
+| [`wowii_conjecture17_induced_bipartite`](wowii_conjecture17_induced_bipartite/) | A Verified Proof of Written on the Wall II Conjecture 17 | `WrittenOnTheWallII.GraphConjecture17.conjecture17` | [`DEPENDENCIES_AND_REPRODUCTION.md`](wowii_conjecture17_induced_bipartite/DEPENDENCIES_AND_REPRODUCTION.md) |
 | [`wowii_conjecture141_induced_tree`](wowii_conjecture141_induced_tree/) | A Verified Proof of Written on the Wall II Conjecture 141 | `WrittenOnTheWallII.GraphConjecture141.conjecture141_strong` | [`DEPENDENCIES_AND_REPRODUCTION.md`](wowii_conjecture141_induced_tree/DEPENDENCIES_AND_REPRODUCTION.md) |
 | [`local_girth_induced_tree_bound`](local_girth_induced_tree_bound/) | An Elementary Optimal Local-Girth Bound for Induced Trees | `WrittenOnTheWallII.LocalGirthInducedTreeBound.local_girth_induced_tree_bound` | [`DEPENDENCIES_AND_REPRODUCTION.md`](local_girth_induced_tree_bound/DEPENDENCIES_AND_REPRODUCTION.md) |
 
@@ -39,6 +40,7 @@ lake build <target-module>
 
 Add new proof support material as a new top-level directory rather than placing
 it directly at the repository root.  Use a short ASCII slug, for example
-`local_girth_induced_tree_bound/`, and update the package table above.  Keep
-generated caches, editor files, local agent logs, and private working notes out
-of the committed artifact.
+`local_girth_induced_tree_bound/`, and update the package table above.  Lean
+source files, Lake configuration, manifests, and reproduction notes should be
+tracked by default; only generated caches, build outputs, editor files, local
+agent logs, generated sites, and private working notes should be ignored.

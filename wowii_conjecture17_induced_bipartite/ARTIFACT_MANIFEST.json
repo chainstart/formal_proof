@@ -1,0 +1,31 @@
+{
+  "artifact": "wowii_conjecture17_induced_bipartite",
+  "created": "2026-05-22",
+  "source_workspace": "/home/biostar/work/projects/amra/artifacts/lean_workspaces/conjecture141_strong",
+  "public_repository": "https://github.com/chainstart/formal_proof",
+  "public_url": "https://github.com/chainstart/formal_proof/tree/main/wowii_conjecture17_induced_bipartite",
+  "target_file": "FormalConjectures/WrittenOnTheWallII/GraphConjecture17.lean",
+  "target_module": "FormalConjectures.WrittenOnTheWallII.GraphConjecture17",
+  "target_declaration": "WrittenOnTheWallII.GraphConjecture17.conjecture17",
+  "target_declarations": [
+    "WrittenOnTheWallII.GraphConjecture17.conjecture17_nat_bound",
+    "WrittenOnTheWallII.GraphConjecture17.conjecture17_real_bound",
+    "WrittenOnTheWallII.GraphConjecture17.conjecture17"
+  ],
+  "verification_command": "lake build FormalConjectures.WrittenOnTheWallII.GraphConjecture17",
+  "placeholder_scan_command": "rg -n \"\\bsorry\\b|\\badmit\\b|axiom|constant|opaque\" FormalConjectures/WrittenOnTheWallII/GraphConjecture17.lean",
+  "verification_status": "verified",
+  "formal_domain": "finite nontrivial connected simple graphs",
+  "informal_singleton_case": "trivial if the original source convention includes the one-vertex graph",
+  "included_files": [
+    "FormalConjectures/",
+    "FormalConjecturesForMathlib/",
+    "FormalConjecturesTest/",
+    "lakefile.toml",
+    "lake-manifest.json",
+    "lean-toolchain",
+    "README.md",
+    "DEPENDENCIES_AND_REPRODUCTION.md",
+    "LOCAL_VERIFICATION.md"
+  ]
+}
