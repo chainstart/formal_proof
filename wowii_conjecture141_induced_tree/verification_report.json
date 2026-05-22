@@ -1,7 +1,7 @@
 {
   "problem": "WOWII Conjecture 141",
   "target": "strong ceil version",
-  "public_repository": "https://github.com/chainstart/wowii-conjecture141-formal-proof",
+  "public_repository": "https://github.com/chainstart/formal_proof",
   "lean_workspace": "wowii_conjecture141_induced_tree",
   "lean_file": "FormalConjectures/WrittenOnTheWallII/GraphConjecture141.lean",
   "theorem": "WrittenOnTheWallII.GraphConjecture141.conjecture141_strong",

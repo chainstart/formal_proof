@@ -1,14 +1,18 @@
 # Formal Proof Support Materials
 
-This repository contains Lean formal proof support materials for the manuscript
+This repository is the shared public archive for Lean formal proof support
+materials. The repository name is `formal_proof`; each concrete theorem or paper
+proof package lives in its own top-level subdirectory.
 
-**A Verified Proof of Written on the Wall II Conjecture 141**.
-
-The paper-specific artifact is in:
+Currently included proof packages:
 
 ```text
 wowii_conjecture141_induced_tree/
 ```
+
+That package supports the manuscript:
+
+**A Verified Proof of Written on the Wall II Conjecture 141**.
 
 The main verified Lean theorem is:
 

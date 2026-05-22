@@ -3,7 +3,7 @@
 Public repository:
 
 ```text
-https://github.com/chainstart/wowii-conjecture141-formal-proof
+https://github.com/chainstart/formal_proof
 ```
 
 ## Prerequisites
@@ -37,8 +37,8 @@ lake-manifest.json
 From the paper artifact directory:
 
 ```bash
-git clone https://github.com/chainstart/wowii-conjecture141-formal-proof.git
-cd wowii-conjecture141-formal-proof/wowii_conjecture141_induced_tree
+git clone https://github.com/chainstart/formal_proof.git
+cd formal_proof/wowii_conjecture141_induced_tree
 lake exe cache get
 lake build FormalConjectures.WrittenOnTheWallII.GraphConjecture141
 ```

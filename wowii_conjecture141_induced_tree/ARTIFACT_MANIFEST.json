@@ -1,7 +1,7 @@
 {
   "schema_version": "manuscript_support_materials.formal_proof.v1",
   "paper": "A Verified Proof of Written on the Wall II Conjecture 141",
-  "public_repository": "https://github.com/chainstart/wowii-conjecture141-formal-proof",
+  "public_repository": "https://github.com/chainstart/formal_proof",
   "target_theorem": "WrittenOnTheWallII.GraphConjecture141.conjecture141_strong",
   "target_file": "FormalConjectures/WrittenOnTheWallII/GraphConjecture141.lean",
   "lean_toolchain": "leanprover/lean4:v4.27.0",

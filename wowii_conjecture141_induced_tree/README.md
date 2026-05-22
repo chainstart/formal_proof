@@ -7,7 +7,7 @@ This directory contains the Lean formal proof artifact supporting the manuscript
 
 - Paper theorem: Written on the Wall II Conjecture 141, ceil version.
 - Public repository:
-  `https://github.com/chainstart/wowii-conjecture141-formal-proof`
+  `https://github.com/chainstart/formal_proof`
 - Lean theorem:
   `WrittenOnTheWallII.GraphConjecture141.conjecture141_strong`
 - Main source file:
