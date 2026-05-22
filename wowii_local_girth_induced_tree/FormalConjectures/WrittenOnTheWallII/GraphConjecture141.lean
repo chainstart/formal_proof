@@ -547,7 +547,7 @@ of a maximum-degree vertex is independent and can be joined to a sufficiently
 long induced path segment from that vertex.
 -/
 @[category research solved, AMS 5]
-theorem conjecture141_local_girth_strong (G : SimpleGraph α) (h : G.Connected) :
+theorem local_girth_induced_tree_bound (G : SimpleGraph α) (h : G.Connected) :
     (Finset.univ.sup (indepNeighborsCard G)) + Nat.max 1 (G.girth - 3) ≤
     largestInducedTreeSize G := by
   classical
@@ -1088,12 +1088,23 @@ theorem conjecture141_local_girth_strong (G : SimpleGraph α) (h : G.Connected) 
     simpa [Nat.add_comm] using hlarge_tree v
 
 /--
+Historical alias for the local-girth theorem.  The theorem is stronger than
+WOWII Conjecture 141; new manuscripts should cite
+`local_girth_induced_tree_bound`.
+-/
+@[category research solved, AMS 5]
+theorem conjecture141_local_girth_strong (G : SimpleGraph α) (h : G.Connected) :
+    (Finset.univ.sup (indepNeighborsCard G)) + Nat.max 1 (G.girth - 3) ≤
+    largestInducedTreeSize G :=
+  local_girth_induced_tree_bound G h
+
+/--
 WOWII Conjecture 140 follows from the local-girth strengthening.
 -/
 @[category research solved, AMS 5]
 theorem conjecture140_from_local_girth_strong (G : SimpleGraph α) (h : G.Connected) :
     (Finset.univ.sup (indepNeighborsCard G)) + 1 ≤ largestInducedTreeSize G := by
-  have hstrong := conjecture141_local_girth_strong G h
+  have hstrong := local_girth_induced_tree_bound G h
   have hterm : 1 ≤ Nat.max 1 (G.girth - 3) := Nat.le_max_left 1 (G.girth - 3)
   exact (Nat.add_le_add_left hterm (Finset.univ.sup (indepNeighborsCard G))).trans hstrong
 
@@ -1104,7 +1115,7 @@ WOWII Conjecture 141 follows formally from the local-girth strengthening.
 theorem conjecture141_from_local_girth_strong (G : SimpleGraph α) (h : G.Connected) :
     (G.girth + 1) / 2 - 1 + (Finset.univ.sup (indepNeighborsCard G)) ≤
     largestInducedTreeSize G := by
-  have hstrong := conjecture141_local_girth_strong G h
+  have hstrong := local_girth_induced_tree_bound G h
   have harith : (G.girth + 1) / 2 - 1 ≤ Nat.max 1 (G.girth - 3) := by
     by_cases hg : G.girth ≤ 4
     · interval_cases G.girth <;> norm_num [Nat.max]

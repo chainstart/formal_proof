@@ -22,6 +22,6 @@ The final `rg` command should print no lines for the target file.
 
 ## Verified Declarations
 
-- `WrittenOnTheWallII.GraphConjecture141.conjecture141_local_girth_strong`
+- `WrittenOnTheWallII.GraphConjecture141.local_girth_induced_tree_bound`
 - `WrittenOnTheWallII.GraphConjecture141.conjecture140_from_local_girth_strong`
 - `WrittenOnTheWallII.GraphConjecture141.conjecture141_from_local_girth_strong`
