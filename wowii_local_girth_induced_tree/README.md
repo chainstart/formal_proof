@@ -4,7 +4,7 @@ This directory contains the Lean support package for the manuscript named
 above.  It is designed to be reproducible from the files in this public
 repository, without local build caches.
 
-Public release tag: <https://github.com/chainstart/formal_proof/releases/tag/wowii-local-girth-induced-tree-v1>
+Public release tag: <https://github.com/chainstart/formal_proof/releases/tag/wowii-local-girth-induced-tree-v2>
 
 Pinned commit: <https://github.com/chainstart/formal_proof/commit/37deb16e7386a4621fc2cd9ebc6ce3996efac2c0>
 
