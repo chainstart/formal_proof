@@ -10,6 +10,7 @@ Public repository: <https://github.com/chainstart/formal_proof>
 
 | Package | Manuscript / theorem | Main Lean declaration | Reproduction guide |
 | --- | --- | --- | --- |
+| [`wowii_conjecture141_induced_tree`](wowii_conjecture141_induced_tree/) | A Verified Proof of Written on the Wall II Conjecture 141 | `WrittenOnTheWallII.GraphConjecture141.conjecture141_strong` | [`DEPENDENCIES_AND_REPRODUCTION.md`](wowii_conjecture141_induced_tree/DEPENDENCIES_AND_REPRODUCTION.md) |
 | [`local_girth_induced_tree_bound`](local_girth_induced_tree_bound/) | An Elementary Optimal Local-Girth Bound for Induced Trees | `WrittenOnTheWallII.LocalGirthInducedTreeBound.local_girth_induced_tree_bound` | [`DEPENDENCIES_AND_REPRODUCTION.md`](local_girth_induced_tree_bound/DEPENDENCIES_AND_REPRODUCTION.md) |
 
 ## Repository Layout
