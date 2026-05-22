@@ -10,3 +10,6 @@
 **/docbuild/.lake/
 **/docbuild/build/
 **/docbuild/site/node_modules/
+
+# Local proof workspaces can include full dependency/build snapshots.
+wowii_conjecture17_induced_bipartite/
