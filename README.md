@@ -10,8 +10,7 @@ Public repository: <https://github.com/chainstart/formal_proof>
 
 | Package | Manuscript / theorem | Main Lean declaration | Reproduction guide |
 | --- | --- | --- | --- |
-| [`wowii_conjecture141_induced_tree`](wowii_conjecture141_induced_tree/) | A Verified Proof of Written on the Wall II Conjecture 141 | `WrittenOnTheWallII.GraphConjecture141.conjecture141_strong` | [`DEPENDENCIES_AND_REPRODUCTION.md`](wowii_conjecture141_induced_tree/DEPENDENCIES_AND_REPRODUCTION.md) |
-| [`wowii_local_girth_induced_tree`](wowii_local_girth_induced_tree/) | An Elementary Optimal Local-Girth Bound for Induced Trees | `WrittenOnTheWallII.GraphConjecture141.local_girth_induced_tree_bound` | [`DEPENDENCIES_AND_REPRODUCTION.md`](wowii_local_girth_induced_tree/DEPENDENCIES_AND_REPRODUCTION.md) |
+| [`local_girth_induced_tree_bound`](local_girth_induced_tree_bound/) | An Elementary Optimal Local-Girth Bound for Induced Trees | `WrittenOnTheWallII.LocalGirthInducedTreeBound.local_girth_induced_tree_bound` | [`DEPENDENCIES_AND_REPRODUCTION.md`](local_girth_induced_tree_bound/DEPENDENCIES_AND_REPRODUCTION.md) |
 
 ## Repository Layout
 
@@ -39,6 +38,6 @@ lake build <target-module>
 
 Add new proof support material as a new top-level directory rather than placing
 it directly at the repository root.  Use a short ASCII slug, for example
-`wowii_local_girth_induced_tree/`, and update the package table above.  Keep
+`local_girth_induced_tree_bound/`, and update the package table above.  Keep
 generated caches, editor files, local agent logs, and private working notes out
 of the committed artifact.
