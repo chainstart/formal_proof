@@ -4,7 +4,7 @@ This directory contains the Lean support package for the manuscript named
 above.  It is designed to be reproducible from the files in this public
 repository, without local build caches.
 
-Public release tag: <https://github.com/chainstart/formal_proof/releases/tag/local-girth-induced-tree-bound>
+Public repository tag: <https://github.com/chainstart/formal_proof/tree/local-girth-induced-tree-bound/local_girth_induced_tree_bound>
 
 ## Main Lean Artifacts
 
