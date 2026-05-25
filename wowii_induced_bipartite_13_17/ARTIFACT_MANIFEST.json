@@ -1,0 +1,16 @@
+{
+  "artifact": "wowii_induced_bipartite_13_17",
+  "description": "Combined Lean support package for WOWII Conjecture 13 and Conjecture 17 induced-bipartite lower bounds.",
+  "lean_toolchain": "leanprover/lean4:v4.26.0",
+  "root_import": "AmraLibrary",
+  "target_modules": [
+    "AmraLibrary.Combinatorics.SimpleGraph.GraphConjectures.WowiiConjecture13",
+    "AmraLibrary.Combinatorics.SimpleGraph.GraphConjectures.WowiiConjecture17"
+  ],
+  "repository": "https://github.com/chainstart/formal_proof/tree/main/wowii_induced_bipartite_13_17",
+  "verification": {
+    "command": "lake exe cache get && lake build",
+    "returncode": 0,
+    "summary": "Build completed successfully (3094 jobs)."
+  }
+}
