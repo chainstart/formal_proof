@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="390" viewBox="0 0 980 390" role="img" aria-labelledby="title desc">
+  <title id="title">Selecting one vertex from each diameter-path pair</title>
+  <desc id="desc">The diameter path is divided into pairs (p_3j,p_3j+1). Since the fixed independent set I cannot contain adjacent vertices, each pair supplies a chosen vertex outside I.</desc>
+  <defs>
+    <style>
+      .edge { stroke: #475569; stroke-width: 3; fill: none; }
+      .node { fill: #f8fafc; stroke: #334155; stroke-width: 2.2; }
+      .inI { fill: #dbeafe; stroke: #1d4ed8; stroke-width: 2.5; }
+      .chosen { fill: #bbf7d0; stroke: #15803d; stroke-width: 3; }
+      .gap { fill: #f1f5f9; stroke: #94a3b8; stroke-width: 2; }
+      .pair { fill: none; stroke: #f59e0b; stroke-width: 2.5; stroke-dasharray: 8 5; }
+      .label { font: 16px Arial, sans-serif; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }
+      .small { font: 14px Arial, sans-serif; fill: #334155; text-anchor: middle; }
+      .note { font: 15px Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="978" height="388" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="490" y="34" class="label">b(G) &gt;= alpha(G) + ceil(diam(G)/3)</text>
+  <text x="490" y="60" class="small">Take a maximum independent set I, then add one selected path vertex from each pair.</text>
+
+  <line x1="80" y1="180" x2="170" y2="180" class="edge"/>
+  <line x1="170" y1="180" x2="260" y2="180" class="edge"/>
+  <line x1="260" y1="180" x2="350" y2="180" class="edge"/>
+  <line x1="350" y1="180" x2="440" y2="180" class="edge"/>
+  <line x1="440" y1="180" x2="530" y2="180" class="edge"/>
+  <line x1="530" y1="180" x2="620" y2="180" class="edge"/>
+  <line x1="620" y1="180" x2="710" y2="180" class="edge"/>
+  <line x1="710" y1="180" x2="800" y2="180" class="edge"/>
+  <line x1="800" y1="180" x2="890" y2="180" class="edge"/>
+
+  <rect x="50" y="128" width="150" height="104" rx="12" class="pair"/>
+  <rect x="320" y="128" width="150" height="104" rx="12" class="pair"/>
+  <rect x="590" y="128" width="150" height="104" rx="12" class="pair"/>
+
+  <circle cx="80" cy="180" r="22" class="inI"/>
+  <circle cx="170" cy="180" r="22" class="chosen"/>
+  <circle cx="260" cy="180" r="20" class="gap"/>
+  <circle cx="350" cy="180" r="22" class="chosen"/>
+  <circle cx="440" cy="180" r="22" class="inI"/>
+  <circle cx="530" cy="180" r="20" class="gap"/>
+  <circle cx="620" cy="180" r="22" class="inI"/>
+  <circle cx="710" cy="180" r="22" class="chosen"/>
+  <circle cx="800" cy="180" r="20" class="gap"/>
+  <circle cx="890" cy="180" r="22" class="node"/>
+
+  <text x="80" y="180" class="label">p0</text>
+  <text x="170" y="180" class="label">p1</text>
+  <text x="260" y="180" class="label">p2</text>
+  <text x="350" y="180" class="label">p3</text>
+  <text x="440" y="180" class="label">p4</text>
+  <text x="530" y="180" class="label">p5</text>
+  <text x="620" y="180" class="label">p6</text>
+  <text x="710" y="180" class="label">p7</text>
+  <text x="800" y="180" class="label">p8</text>
+  <text x="890" y="180" class="label">...</text>
+
+  <text x="125" y="248" class="small">(p0,p1)</text>
+  <text x="395" y="248" class="small">(p3,p4)</text>
+  <text x="665" y="248" class="small">(p6,p7)</text>
+
+  <circle cx="175" cy="312" r="12" class="inI"/>
+  <text x="203" y="313" class="note">vertices already in I</text>
+  <circle cx="400" cy="312" r="12" class="chosen"/>
+  <text x="430" y="313" class="note">new set S, disjoint from I</text>
+  <text x="650" y="313" class="note">pairs are separated by one unused path vertex</text>
+</svg>

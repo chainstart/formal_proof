@@ -20,6 +20,7 @@
     "lean-toolchain",
     "LICENSE",
     "natural_language_proof.md",
+    "figures/",
     "verification_report.json",
     "README.md",
     "DEPENDENCIES_AND_REPRODUCTION.md"

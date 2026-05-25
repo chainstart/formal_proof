@@ -50,6 +50,7 @@
     "lakefile.toml",
     "lean-toolchain",
     "natural_language_proof.md",
+    "figures/",
     "scripts/"
   ],
   "lean_toolchain": "leanprover/lean4:v4.27.0",

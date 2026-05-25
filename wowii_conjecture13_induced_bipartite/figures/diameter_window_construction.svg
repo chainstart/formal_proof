@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="430" viewBox="0 0 980 430" role="img" aria-labelledby="title desc">
+  <title id="title">Diameter path window construction for an induced bipartite subgraph</title>
+  <desc id="desc">A diameter geodesic P contains a short window Q of vertices at distance at most two from v. The proof deletes Q, adds an independent neighbor set A, the vertex v, and a small set T from Q.</desc>
+  <defs>
+    <style>
+      .edge { stroke: #475569; stroke-width: 3; fill: none; }
+      .thin { stroke: #94a3b8; stroke-width: 2; fill: none; }
+      .dash { stroke: #64748b; stroke-width: 2; stroke-dasharray: 7 6; fill: none; }
+      .node { fill: #f8fafc; stroke: #334155; stroke-width: 2.2; }
+      .q { fill: #fee2e2; stroke: #b91c1c; stroke-width: 2.5; }
+      .t { fill: #fecaca; stroke: #991b1b; stroke-width: 3; }
+      .a { fill: #dbeafe; stroke: #1d4ed8; stroke-width: 2.5; }
+      .v { fill: #fde68a; stroke: #92400e; stroke-width: 3; }
+      .kept { fill: #ecfdf5; stroke: #15803d; stroke-width: 2.5; }
+      .label { font: 16px Arial, sans-serif; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }
+      .small { font: 14px Arial, sans-serif; fill: #334155; text-anchor: middle; }
+      .note { font: 15px Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="978" height="428" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="490" y="33" class="label">S = (V(P) \ Q) union A union {v} union T</text>
+
+  <rect x="347" y="132" width="286" height="106" rx="10" fill="#fff1f2" stroke="#fca5a5" stroke-width="2"/>
+  <text x="490" y="118" class="small">short window Q: path vertices within distance at most 2 from v</text>
+
+  <line x1="85" y1="190" x2="180" y2="190" class="edge"/>
+  <line x1="180" y1="190" x2="275" y2="190" class="edge"/>
+  <line x1="275" y1="190" x2="370" y2="190" class="edge"/>
+  <line x1="370" y1="190" x2="465" y2="190" class="edge"/>
+  <line x1="465" y1="190" x2="560" y2="190" class="edge"/>
+  <line x1="560" y1="190" x2="655" y2="190" class="edge"/>
+  <line x1="655" y1="190" x2="750" y2="190" class="edge"/>
+  <line x1="750" y1="190" x2="845" y2="190" class="edge"/>
+
+  <circle cx="85" cy="190" r="22" class="kept"/>
+  <circle cx="180" cy="190" r="22" class="kept"/>
+  <circle cx="275" cy="190" r="22" class="kept"/>
+  <circle cx="370" cy="190" r="22" class="t"/>
+  <circle cx="465" cy="190" r="22" class="q"/>
+  <circle cx="560" cy="190" r="22" class="q"/>
+  <circle cx="655" cy="190" r="22" class="t"/>
+  <circle cx="750" cy="190" r="22" class="kept"/>
+  <circle cx="845" cy="190" r="22" class="kept"/>
+
+  <text x="85" y="190" class="label">p0</text>
+  <text x="180" y="190" class="label">...</text>
+  <text x="275" y="190" class="label">p i</text>
+  <text x="370" y="190" class="label">T</text>
+  <text x="465" y="190" class="label">Q</text>
+  <text x="560" y="190" class="label">Q</text>
+  <text x="655" y="190" class="label">T</text>
+  <text x="750" y="190" class="label">...</text>
+  <text x="845" y="190" class="label">pD</text>
+
+  <circle cx="490" cy="325" r="26" class="v"/>
+  <text x="490" y="325" class="label">v</text>
+  <circle cx="390" cy="330" r="22" class="a"/>
+  <circle cx="305" cy="310" r="22" class="a"/>
+  <circle cx="590" cy="330" r="22" class="a"/>
+  <text x="390" y="330" class="label">a1</text>
+  <text x="305" y="310" class="label">a2</text>
+  <text x="590" y="330" class="label">a3</text>
+  <text x="490" y="375" class="small">A is an independent subset of N(v)</text>
+
+  <line x1="490" y1="299" x2="390" y2="330" class="thin"/>
+  <line x1="490" y1="299" x2="305" y2="310" class="thin"/>
+  <line x1="490" y1="299" x2="590" y2="330" class="thin"/>
+  <path d="M490,299 C448,270 400,248 370,212" class="dash"/>
+  <path d="M490,299 C530,270 620,248 655,212" class="dash"/>
+
+  <text x="705" y="302" class="note">Delete Q from the geodesic P.</text>
+  <text x="705" y="326" class="note">Add v, A, and the selected endpoints T.</text>
+  <text x="705" y="350" class="note">The selected path components can be 2-colored.</text>
+</svg>

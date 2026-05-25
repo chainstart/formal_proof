@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420" role="img" aria-labelledby="title desc">
+  <title id="title">Induced tree built from a maximum-degree vertex and a girth-limited path</title>
+  <desc id="desc">The vertex v has its neighborhood attached as leaves, while a path P of length g minus 3 extends from v. Dashed red edges indicate edges forbidden by the girth assumption.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#475569"/>
+    </marker>
+    <style>
+      .edge { stroke: #334155; stroke-width: 3; fill: none; }
+      .path { stroke: #0f766e; stroke-width: 4; fill: none; }
+      .bad { stroke: #dc2626; stroke-width: 2.5; stroke-dasharray: 8 7; fill: none; }
+      .node { fill: #f8fafc; stroke: #334155; stroke-width: 2.5; }
+      .root { fill: #fde68a; stroke: #92400e; stroke-width: 3; }
+      .neighbor { fill: #dbeafe; stroke: #1d4ed8; stroke-width: 2.5; }
+      .pathnode { fill: #ccfbf1; stroke: #0f766e; stroke-width: 2.5; }
+      .label { font: 17px Arial, sans-serif; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }
+      .small { font: 14px Arial, sans-serif; fill: #334155; text-anchor: middle; }
+      .note { font: 15px Arial, sans-serif; fill: #475569; }
+      .red { fill: #b91c1c; }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="918" height="418" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="460" y="34" class="label">X = N(v) union V(P) induces a tree of order Delta(G) + g - 3</text>
+
+  <line x1="160" y1="205" x2="95" y2="95" class="edge"/>
+  <line x1="160" y1="205" x2="88" y2="205" class="edge"/>
+  <line x1="160" y1="205" x2="95" y2="315" class="edge"/>
+  <line x1="160" y1="205" x2="260" y2="205" class="path"/>
+  <line x1="260" y1="205" x2="360" y2="205" class="path"/>
+  <line x1="360" y1="205" x2="460" y2="205" class="path"/>
+  <line x1="460" y1="205" x2="560" y2="205" class="path"/>
+  <line x1="560" y1="205" x2="665" y2="205" class="path"/>
+
+  <path d="M95,95 C245,35 408,60 560,185" class="bad"/>
+  <path d="M95,315 C220,350 330,315 360,225" class="bad"/>
+  <path d="M260,205 C340,120 455,120 560,205" class="bad"/>
+
+  <circle cx="160" cy="205" r="28" class="root"/>
+  <circle cx="95" cy="95" r="24" class="neighbor"/>
+  <circle cx="88" cy="205" r="24" class="neighbor"/>
+  <circle cx="95" cy="315" r="24" class="neighbor"/>
+  <circle cx="260" cy="205" r="24" class="pathnode"/>
+  <circle cx="360" cy="205" r="24" class="pathnode"/>
+  <circle cx="460" cy="205" r="24" class="pathnode"/>
+  <circle cx="560" cy="205" r="24" class="pathnode"/>
+  <circle cx="665" cy="205" r="24" class="pathnode"/>
+
+  <text x="160" y="205" class="label">v</text>
+  <text x="95" y="95" class="label">u1</text>
+  <text x="88" y="205" class="label">u2</text>
+  <text x="95" y="315" class="label">u3</text>
+  <text x="260" y="205" class="label">x1</text>
+  <text x="360" y="205" class="label">x2</text>
+  <text x="460" y="205" class="label">...</text>
+  <text x="560" y="205" class="label">x_r</text>
+  <text x="665" y="205" class="label">x_{r+1}</text>
+
+  <text x="86" y="62" class="small">other vertices of N(v)</text>
+  <text x="445" y="246" class="small">P has initial length r = g - 3</text>
+  <text x="700" y="168" class="note">Keep N(v) and the path P.</text>
+  <text x="700" y="192" class="note">Any extra edge in red would close</text>
+  <text x="700" y="216" class="note">a cycle shorter than the girth g.</text>
+  <text x="705" y="286" class="note red">Forbidden chords make G[X]</text>
+  <text x="705" y="310" class="note red">exactly a star plus a path.</text>
+</svg>

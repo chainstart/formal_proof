@@ -42,6 +42,12 @@ Define the short window
 Q = {p_i : dist(v,p_i) <= 2}.
 ```
 
+Figure 1 records the geometry of the construction. Only the short window `Q`
+can interact with `v` or with the independent neighbor set `A`; outside `Q`,
+the diameter path remains available for the induced bipartite subgraph.
+
+![Figure 1: The diameter path P, the short window Q, the independent neighbor set A, and the small set T added back after deleting Q.](figures/diameter_window_construction.svg)
+
 This window has at most five vertices.  Indeed, if `p_i,p_j ∈ Q` and `i < j`,
 then the geodesic property gives
 
@@ -77,6 +83,10 @@ Now set
 S = (V(P) \ Q) ∪ A ∪ {v} ∪ T.
 ```
 
+This is the set shown in Figure 1: the green path vertices are kept from
+`V(P)\Q`, the blue vertices are `A`, the yellow vertex is `v`, and the red
+endpoints are the selected vertices of `T`.
+
 The pieces in this union are disjoint except for harmless set notation:
 
 - `A` is disjoint from `V(P)\Q`, because every `a ∈ A` has distance `1` from
@@ -105,7 +115,8 @@ Color `v` and all vertices of `T` with color `0`, and color every vertex of
 
 The selected path vertices are `(V(P)\Q) ∪ T`.  Their induced subgraph is a
 subgraph of the path `P`, because `P` is induced.  Each connected component of
-this selected path subgraph contains at most one vertex of `T`:
+this selected path subgraph contains at most one vertex of `T`, as indicated by
+the separated red endpoints in Figure 1:
 
 - if `|Q| <= 3`, then `T` is empty;
 - if `|Q| = 4`, then `T` has one vertex;

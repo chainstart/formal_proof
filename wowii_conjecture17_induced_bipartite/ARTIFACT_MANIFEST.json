@@ -25,6 +25,8 @@
     "lake-manifest.json",
     "lean-toolchain",
     "README.md",
+    "natural_language_proof.md",
+    "figures/",
     "DEPENDENCIES_AND_REPRODUCTION.md",
     "LOCAL_VERIFICATION.md"
   ]

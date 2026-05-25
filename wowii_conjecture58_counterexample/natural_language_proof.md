@@ -22,6 +22,12 @@ Edges:
 Equivalently, `C union {a0,b0}` is a clique attached to the edge `a0-b0` of
 the `K_{3,3}` core.
 
+Figure 1 shows the construction. The left side is the `K_{3,3}` core, and the
+right side is the clique `C`; the only edges from `C` to the core go through
+`a0` and `b0`.
+
+![Figure 1: The counterexample graph G_k consists of a K_{3,3} core and a clique C joined only to a0 and b0.](figures/counterexample_structure.svg)
+
 The graph is connected and has:
 
 ```text
@@ -36,7 +42,8 @@ The core `A union B` induces `K_{3,3}`, so:
 b(G_k) >= 6.
 ```
 
-Also, `C union {a0,b0}` is a clique of size `k+2`. Any induced bipartite
+Also, as Figure 1 emphasizes, `C union {a0,b0}` is a clique of size `k+2`.
+Any induced bipartite
 subgraph can contain at most two vertices from this clique. Outside this clique
 there are only four vertices:
 
@@ -80,6 +87,12 @@ Now prove no induced forest has 6 vertices.
 
 Let `S` be a 6-vertex set, and let `t = |S cap C|`.
 
+The case split below is illustrated in Figure 2. In each case, the selected
+six vertices contain either a triangle inside the clique side or a `C4` inside
+the `K_{3,3}` core.
+
+![Figure 2: The obstruction to a six-vertex induced forest is always either a triangle or a four-cycle.](figures/six_vertex_obstructions.svg)
+
 - If `t >= 3`, then `S` contains a triangle inside the clique `C`.
 - If `t = 2`, then the two vertices from `C` are adjacent. If `S` also contains
   `a0` or `b0`, there is a triangle. If it contains neither `a0` nor `b0`, then
@@ -90,8 +103,8 @@ Let `S` be a 6-vertex set, and let `t = |S cap C|`.
   contain a `C4`.
 - If `t = 0`, then `S` is the whole `K_{3,3}` core, which contains a `C4`.
 
-Thus every induced 6-vertex set contains either a triangle or a `C4`, and so is
-not acyclic. Hence:
+Thus every induced 6-vertex set contains either a triangle or a `C4`, exactly
+as summarized in Figure 2, and so is not acyclic. Hence:
 
 ```text
 f(G_k) = 5.

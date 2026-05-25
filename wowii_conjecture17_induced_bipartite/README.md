@@ -23,6 +23,9 @@ Verified declarations:
 - `WrittenOnTheWallII.GraphConjecture17.conjecture17_real_bound`
 - `WrittenOnTheWallII.GraphConjecture17.conjecture17`
 
+The informal proof exposition, including the diameter-path selection figure, is
+in [`natural_language_proof.md`](natural_language_proof.md).
+
 Local verification status: `verified`.
 
 See `DEPENDENCIES_AND_REPRODUCTION.md` for setup and build commands.

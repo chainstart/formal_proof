@@ -45,7 +45,8 @@
     "lake-manifest.json",
     "lakefile.lean",
     "lean-toolchain",
-    "natural_language_proof.md"
+    "natural_language_proof.md",
+    "figures/"
   ],
   "lean_toolchain": "leanprover/lean4:v4.26.0",
   "mathlib_revision": "2df2f0150c275ad53cb3c90f7c98ec15a56a1a67",

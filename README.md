@@ -14,6 +14,7 @@ Public repository: <https://github.com/chainstart/formal_proof>
 | [`wowii_conjecture13_induced_bipartite`](wowii_conjecture13_induced_bipartite/) | A Diameter and Local-Independence Bound for Induced Bipartite Subgraphs | `SimpleGraph.conjecture13` | [`DEPENDENCIES_AND_REPRODUCTION.md`](wowii_conjecture13_induced_bipartite/DEPENDENCIES_AND_REPRODUCTION.md) |
 | [`wowii_conjecture141_induced_tree`](wowii_conjecture141_induced_tree/) | A Verified Proof of Written on the Wall II Conjecture 141 | `WrittenOnTheWallII.GraphConjecture141.conjecture141_strong` | [`DEPENDENCIES_AND_REPRODUCTION.md`](wowii_conjecture141_induced_tree/DEPENDENCIES_AND_REPRODUCTION.md) |
 | [`wowii_conjecture17_induced_bipartite`](wowii_conjecture17_induced_bipartite/) | wowii_conjecture17_induced_bipartite | `` | [`DEPENDENCIES_AND_REPRODUCTION.md`](wowii_conjecture17_induced_bipartite/DEPENDENCIES_AND_REPRODUCTION.md) |
+| [`wowii_conjecture322_local_clique`](wowii_conjecture322_local_clique/) | A Local-Clique Criterion for Well Total Domination | `SimpleGraph.conjecture322` | [`DEPENDENCIES_AND_REPRODUCTION.md`](wowii_conjecture322_local_clique/DEPENDENCIES_AND_REPRODUCTION.md) |
 | [`wowii_conjecture58_counterexample`](wowii_conjecture58_counterexample/) | A Formal Counterexample to a Local-Average Induced-Forest Bound | `SimpleGraph.wowii_conjecture58_counterexample_certified` | [`DEPENDENCIES_AND_REPRODUCTION.md`](wowii_conjecture58_counterexample/DEPENDENCIES_AND_REPRODUCTION.md) |
 
 ## Repository Layout

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="430" viewBox="0 0 980 430" role="img" aria-labelledby="title desc">
+  <title id="title">Why every induced six-vertex set contains a cycle</title>
+  <desc id="desc">The cases by t equals the number of selected clique vertices. Three or more clique vertices contain a triangle; two clique vertices with a0 or b0 contain a triangle; otherwise the K_3,3 core contributes a C4.</desc>
+  <defs>
+    <style>
+      .panel { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; rx: 8; }
+      .edge { stroke: #334155; stroke-width: 2.6; fill: none; }
+      .bad { stroke: #dc2626; stroke-width: 3; fill: none; }
+      .a { fill: #dbeafe; stroke: #1d4ed8; stroke-width: 2.3; }
+      .b { fill: #fde68a; stroke: #92400e; stroke-width: 2.3; }
+      .c { fill: #fee2e2; stroke: #b91c1c; stroke-width: 2.3; }
+      .label { font: 16px Arial, sans-serif; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }
+      .small { font: 14px Arial, sans-serif; fill: #334155; text-anchor: middle; }
+      .red { fill: #b91c1c; }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="978" height="428" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="490" y="34" class="label">A six-vertex induced subgraph is never a forest</text>
+
+  <rect x="35" y="72" width="275" height="300" class="panel"/>
+  <text x="172" y="100" class="label">t &gt;= 3</text>
+  <circle cx="120" cy="205" r="25" class="c"/>
+  <circle cx="225" cy="205" r="25" class="c"/>
+  <circle cx="172" cy="292" r="25" class="c"/>
+  <line x1="120" y1="205" x2="225" y2="205" class="bad"/>
+  <line x1="225" y1="205" x2="172" y2="292" class="bad"/>
+  <line x1="172" y1="292" x2="120" y2="205" class="bad"/>
+  <text x="120" y="205" class="label">c</text>
+  <text x="225" y="205" class="label">c</text>
+  <text x="172" y="292" class="label">c</text>
+  <text x="172" y="337" class="small red">triangle inside the clique C</text>
+
+  <rect x="352" y="72" width="275" height="300" class="panel"/>
+  <text x="490" y="100" class="label">t = 2 with a0 or b0</text>
+  <circle cx="438" cy="205" r="25" class="c"/>
+  <circle cx="542" cy="205" r="25" class="c"/>
+  <circle cx="490" cy="292" r="25" class="a"/>
+  <line x1="438" y1="205" x2="542" y2="205" class="bad"/>
+  <line x1="542" y1="205" x2="490" y2="292" class="bad"/>
+  <line x1="490" y1="292" x2="438" y2="205" class="bad"/>
+  <text x="438" y="205" class="label">c</text>
+  <text x="542" y="205" class="label">c</text>
+  <text x="490" y="292" class="label">a0</text>
+  <text x="490" y="337" class="small red">triangle using C union {a0,b0}</text>
+
+  <rect x="669" y="72" width="275" height="300" class="panel"/>
+  <text x="806" y="100" class="label">otherwise</text>
+  <circle cx="750" cy="185" r="24" class="a"/>
+  <circle cx="750" cy="285" r="24" class="a"/>
+  <circle cx="862" cy="185" r="24" class="b"/>
+  <circle cx="862" cy="285" r="24" class="b"/>
+  <line x1="750" y1="185" x2="862" y2="185" class="bad"/>
+  <line x1="862" y1="185" x2="750" y2="285" class="edge"/>
+  <line x1="750" y1="285" x2="862" y2="285" class="bad"/>
+  <line x1="862" y1="285" x2="750" y2="185" class="edge"/>
+  <text x="750" y="185" class="label">a</text>
+  <text x="750" y="285" class="label">a</text>
+  <text x="862" y="185" class="label">b</text>
+  <text x="862" y="285" class="label">b</text>
+  <text x="806" y="337" class="small red">a C4 remains in the K_{3,3} core</text>
+</svg>

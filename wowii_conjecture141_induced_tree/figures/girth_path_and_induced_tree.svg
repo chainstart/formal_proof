@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="470" viewBox="0 0 980 470" role="img" aria-labelledby="title desc">
+  <title id="title">Path length from girth and induced tree construction</title>
+  <desc id="desc">Panel A shows the spanning-tree argument that a short depth bound would create a cycle shorter than the girth. Panel B shows the induced tree obtained from N(v) and a path of length r.</desc>
+  <defs>
+    <style>
+      .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; rx: 8; }
+      .tree { stroke: #334155; stroke-width: 3; fill: none; }
+      .cycle { stroke: #dc2626; stroke-width: 3; stroke-dasharray: 7 6; fill: none; }
+      .path { stroke: #0f766e; stroke-width: 4; fill: none; }
+      .node { fill: #f8fafc; stroke: #334155; stroke-width: 2.3; }
+      .root { fill: #fde68a; stroke: #92400e; stroke-width: 3; }
+      .neighbor { fill: #dbeafe; stroke: #1d4ed8; stroke-width: 2.5; }
+      .pathnode { fill: #ccfbf1; stroke: #0f766e; stroke-width: 2.5; }
+      .label { font: 16px Arial, sans-serif; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }
+      .small { font: 14px Arial, sans-serif; fill: #334155; text-anchor: middle; }
+      .note { font: 15px Arial, sans-serif; fill: #475569; }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="978" height="468" rx="8" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="490" y="32" class="label">WOWII Conjecture 141: r = ceil(girth(G)/2) - 1</text>
+
+  <rect x="34" y="64" width="415" height="360" class="box"/>
+  <text x="242" y="90" class="label">A. Why a path of length r exists</text>
+
+  <circle cx="242" cy="160" r="25" class="root"/>
+  <circle cx="135" cy="245" r="22" class="node"/>
+  <circle cx="242" cy="250" r="22" class="node"/>
+  <circle cx="350" cy="245" r="22" class="node"/>
+  <circle cx="110" cy="335" r="22" class="node"/>
+  <circle cx="374" cy="335" r="22" class="node"/>
+  <line x1="242" y1="185" x2="135" y2="245" class="tree"/>
+  <line x1="242" y1="185" x2="242" y2="250" class="tree"/>
+  <line x1="242" y1="185" x2="350" y2="245" class="tree"/>
+  <line x1="135" y1="267" x2="110" y2="335" class="tree"/>
+  <line x1="350" y1="267" x2="374" y2="335" class="tree"/>
+  <path d="M110,335 C178,410 306,410 374,335" class="cycle"/>
+  <text x="242" y="160" class="label">v</text>
+  <text x="110" y="335" class="label">x</text>
+  <text x="374" y="335" class="label">y</text>
+  <text x="240" y="382" class="small">a non-tree edge xy would close a cycle</text>
+  <text x="240" y="404" class="small">of length at most 2r - 1, impossible</text>
+
+  <rect x="531" y="64" width="415" height="360" class="box"/>
+  <text x="739" y="90" class="label">B. The induced tree after the path is found</text>
+
+  <line x1="620" y1="245" x2="565" y2="165" class="tree"/>
+  <line x1="620" y1="245" x2="555" y2="245" class="tree"/>
+  <line x1="620" y1="245" x2="565" y2="325" class="tree"/>
+  <line x1="620" y1="245" x2="700" y2="245" class="path"/>
+  <line x1="700" y1="245" x2="780" y2="245" class="path"/>
+  <line x1="780" y1="245" x2="860" y2="245" class="path"/>
+  <circle cx="620" cy="245" r="25" class="root"/>
+  <circle cx="565" cy="165" r="22" class="neighbor"/>
+  <circle cx="555" cy="245" r="22" class="neighbor"/>
+  <circle cx="565" cy="325" r="22" class="neighbor"/>
+  <circle cx="700" cy="245" r="22" class="pathnode"/>
+  <circle cx="780" cy="245" r="22" class="pathnode"/>
+  <circle cx="860" cy="245" r="22" class="pathnode"/>
+  <text x="620" y="245" class="label">v</text>
+  <text x="565" y="165" class="label">u1</text>
+  <text x="555" y="245" class="label">u2</text>
+  <text x="565" y="325" class="label">u3</text>
+  <text x="700" y="245" class="label">x1</text>
+  <text x="780" y="245" class="label">...</text>
+  <text x="860" y="245" class="label">x_r</text>
+  <text x="738" y="332" class="small">N(v) is independent when girth(G) &gt;= 5</text>
+  <text x="738" y="354" class="small">extra edges would create cycles shorter than girth(G)</text>
+</svg>

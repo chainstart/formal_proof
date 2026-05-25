@@ -68,6 +68,12 @@ Set
 X = N(v) union V(P).
 ```
 
+Figure 1 shows the intended induced tree: all neighbors of `v` are attached at
+`v`, while the path `P` supplies the extra `g-3` vertices. The dashed red edges
+are exactly the possible extra edges that the girth assumption rules out.
+
+![Figure 1: The set X = N(v) union V(P) is a star at v together with a path P; any extra chord would create a cycle shorter than g.](figures/induced_tree_from_local_girth.svg)
+
 We will show that `G[X]` is an induced tree.
 
 First, `N(v)` and `V(P)` meet only at `x_1`. Certainly `x_1` is a neighbor of
@@ -88,7 +94,8 @@ definition of girth. Thus
 The graph `G[X]` is connected because all vertices of `N(v)` are adjacent to
 `v`, and all vertices of `P` lie on a path from `v`.
 
-It remains to prove that no extra induced edges create a cycle.
+It remains to prove that no extra induced edges create a cycle. This is the
+formal version of the dashed-edge exclusions in Figure 1.
 
 1. There are no chords of `P`. If `x_i x_j` is an edge with `j >= i+2`, then
    the subpath from `x_i` to `x_j`, together with `x_i x_j`, forms a cycle of
@@ -108,7 +115,8 @@ It remains to prove that no extra induced edges create a cycle.
    `i+2 <= r+2 = g-1`, again impossible.
 
 So `G[X]` consists exactly of the path `P` with all other neighbors of `v`
-attached as leaves at `v`. It is therefore an induced tree. Its order is
+attached as leaves at `v`, as in Figure 1. It is therefore an induced tree.
+Its order is
 
 ```text
 |X| = Delta(G) + g - 3 = L(G) + g - 3.
@@ -149,4 +157,3 @@ The additive term cannot be improved in general.
   trees are stars of order `max(a,b)+1`, so equality holds.
 - For `C_m` with `m>=5`, `g=m`, `L=2`, and `tree(C_m)=m-1`; the bound gives
   `2+m-3=m-1`, so equality holds.
-

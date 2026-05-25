@@ -53,6 +53,12 @@ vertex `v`, its whole neighbor set is independent, and `l(v) = deg(v)`.
 Fix a vertex `v`. We prove that `G` has an induced tree with at least
 `deg(v) + r` vertices.
 
+Figure 1 summarizes the two structural moves in the proof. Panel A is the
+spanning-tree contradiction that forces a path of length at least `r` from
+`v`. Panel B is the resulting induced tree on `N(v) union V(P)`.
+
+![Figure 1: The girth argument gives a path of length r, and the union of that path with N(v) is the induced tree used in the bound.](figures/girth_path_and_induced_tree.svg)
+
 Choose a spanning tree `T` of `G`. We first claim that in `T` there is a
 path starting at `v` of length at least `r`. Otherwise all vertices of `T`
 would have distance less than `r` from `v`. Since `G` is not acyclic, there
@@ -89,7 +95,8 @@ vertices.
 The induced subgraph on this set is connected: every neighbor of `v` is
 adjacent to `v`, and every path vertex is connected to `v` along `P`.
 
-It is also acyclic. A cycle contained entirely in `P` would have length at
+It is also acyclic. This is the dashed-edge exclusion shown in Panel B of
+Figure 1. A cycle contained entirely in `P` would have length at
 most `r + 1 < girth(G)`. A cycle using a neighbor of `v` off the path would
 need to leave that neighbor through an edge other than the edge to `v`.
 It cannot go to another neighbor of `v`, since `G` is triangle-free and
@@ -98,8 +105,8 @@ distance `i`, because that would create a cycle through `v` of length
 `i + 2 <= r + 2 < girth(G)`. Hence every such off-path neighbor is a leaf,
 and no cycle can pass through it.
 
-Therefore the induced subgraph on `N(v) union V(P)` is an induced tree with
-at least `deg(v) + r = l(v) + r` vertices.
+Therefore the induced subgraph on `N(v) union V(P)` is the tree depicted in
+Panel B of Figure 1, with at least `deg(v) + r = l(v) + r` vertices.
 
 Taking `v` with maximum `l(v)` gives
 
